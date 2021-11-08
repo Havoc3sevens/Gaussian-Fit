@@ -16,9 +16,13 @@ This header file contains a structure used as the downhill method
 #include "setup.h"
 
 using namespace std;
-void dwnhll(double (*func)(double *param)) {
-    double params[ ] = {0.0, 0.09, 1.0, 0.0004, 0.00005};
-    func(params);
+//double * dwnhll(double (*func)(double *param), double xstart[ ], int fstart, int stepi, double epsf, int itmin, int iters, double xxi[], double &ffi) {
+double * dwnhll(double (*func)(double *param), double xxi[ ], double &ffi) {
+    xxi[0] = 1.;
+    xxi[1] = 23.;
+    xxi[2] = 42.;
+    ffi = 69.420;
+    return xxi;
 }
 
 struct Datafit

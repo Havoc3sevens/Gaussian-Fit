@@ -1,4 +1,4 @@
-OBJS1 = test.cpp
+OBJS1 = main.cpp
 
 PROG1 = run
 
